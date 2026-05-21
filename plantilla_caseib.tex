@@ -1,0 +1,67 @@
+% Plantilla de Trabajo Académico basada en directrices CASEIB
+% Asignatura: Biomateriales (Curso 2025-26)
+\documentclass[twocolumn,10pt,journal,compsoc]{IEEEtran}
+
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{geometry}
+
+% Configuración de márgenes aproximados CASEIB
+\geometry{letterpaper, margin=1in}
+
+% Renombrar "Index Terms" a "Palabras clave"
+\renewcommand{\IEEEkeywordsname}{Palabras clave}
+
+\begin{document}
+
+% --- PORTADA / TÍTULO ---
+\title{Fabricación Aditiva de Aleaciones de Titanio: Microestructura y Tecnologías Aplicadas}
+
+\author{
+    \textbf{Trabajo académico de Biomateriales GIB -- Curso 2025-26, 2ª parte} \\
+    \vspace{0.2cm}
+    Subgrupo: \dots \\
+    \vspace{0.4cm}
+    \begin{tabular}{ccc}
+        \hline
+        \textbf{Apellidos, Nombre}   & \textbf{\% Participación} & \textbf{Firma} \\ \hline
+        Apellido1 Apellido2, Nombre1 & 100\%                     & \dots          \\
+        Apellido1 Apellido2, Nombre2 & 100\%                     & \dots          \\
+        Apellido1 Apellido2, Nombre3 & 100\%                     & \dots          \\ \hline
+    \end{tabular}
+}
+
+\maketitle
+
+% --- RESUMEN Y PALABRAS CLAVE ---
+\begin{abstract}
+    El resumen debe contener un máximo de 250 palabras. Debe exponer brevemente la problemática del conformado convencional del titanio (procesado plástico, forja), la justificación del uso de la fabricación aditiva de lecho de polvo (SLM, EBM) en el ámbito biomédico, las transformaciones microestructurales asociadas a los gradientes térmicos elevados (formación de la fase martensítica $\alpha'$) y las principales conclusiones derivadas del estado del arte en aplicaciones traumatológicas y ortopédicas.
+\end{abstract}
+
+\begin{IEEEkeywords}
+    Fabricación aditiva, Ti-6Al-4V, Microestructura, Martensita, Osteointegración, CASEIB.
+\end{IEEEkeywords}
+
+% --- 1. INTRODUCCIÓN ---
+\input{secciones/01_introduccion}
+
+% --- 2. PLANTEAMIENTO ---
+\input{secciones/02_planteamiento}
+
+% --- 3. DESARROLLO (ESTADO DEL ARTE) ---
+\input{secciones/03_desarrollo}
+
+% --- 4. CONCLUSIONES ---
+\input{secciones/04_conclusiones}
+
+% --- 5. REFERENCIAS ---
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\end{document}
